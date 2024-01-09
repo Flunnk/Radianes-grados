@@ -19,7 +19,7 @@ function radiansCalculation() {
 }
 
 function copiarTexto() {
-  var texto = document.getElementById("js-input-rad").textContent;
+  var texto = document.getElementById("js-degree-result").textContent;
   
   navigator.clipboard.writeText(texto)
     .then(function() {
@@ -31,7 +31,7 @@ function copiarTexto() {
 }
 
 function copiarTexto2() {
-  var texto = document.getElementById("js-input-grad").textContent;
+  var texto = document.getElementById("js-radian-result").textContent;
   
   navigator.clipboard.writeText(texto)
     .then(function() {
