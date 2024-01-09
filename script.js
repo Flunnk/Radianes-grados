@@ -1,25 +1,25 @@
 function degreesCalculation() {
-  const inputElement = document.querySelector('.js-input-rad');
+  const inputElement = document.getElementById('js-input-rad');
   let value = Number(inputElement.value);
   const pi = Math.PI;
 
   let result = value * 180 / pi;
-  document.querySelector('.js-degree-result')
+  document.getElementById('js-degree-result')
     .innerHTML = result;
 }
 
 function radiansCalculation() {
-  const inputElement = document.querySelector('.js-input-grad');
+  const inputElement = document.getElementById('js-input-grad');
   let value = Number(inputElement.value);
   const pi = Math.PI;
 
   let result = value * pi / 180;
-  document.querySelector('.js-radian-result')
+  document.getElementById('js-radian-result')
     .innerHTML = result;
 }
 
 function copiarTexto() {
-  var texto = document.getElementById("degreeResult").textContent;
+  var texto = document.getElementById("js-input-rad").textContent;
   
   navigator.clipboard.writeText(texto)
     .then(function() {
@@ -31,7 +31,7 @@ function copiarTexto() {
 }
 
 function copiarTexto2() {
-  var texto = document.getElementById("radianResult").textContent;
+  var texto = document.getElementById("js-input-grad").textContent;
   
   navigator.clipboard.writeText(texto)
     .then(function() {
