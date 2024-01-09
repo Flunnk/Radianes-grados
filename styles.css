@@ -1,0 +1,64 @@
+body {
+  background-color: rgb(238, 78, 78);
+  font-family: Roboto, Arial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  height: 150px;
+  position: relative;
+
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 900;
+  margin-bottom: 10px;
+  color: white;
+}
+
+input {
+  margin-right: 10px;
+  margin-left: 25px;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  font-weight: 700;
+}
+
+input::placeholder {
+  color: rgb(187, 187, 187);
+  font-size: 12px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  font-weight: 700;
+  color: rgb(104, 104, 104);
+  cursor: pointer;
+}
+
+.result {
+  color: white;
+  font-weight: bold;
+  margin-left: 30px;
+  display: inline-block;
+}
+
+.copyButton {
+  position: absolute;
+  right: 30px;
+  bottom: 35px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
